@@ -2,13 +2,16 @@
 
 
 ## AIM
-
+To develop a Python program to find the optimal policy for the given RL environment using SARSA-Learning and compare the state values with the Monte Carlo method.
 
 ## PROBLEM STATEMENT
-Explain the problem statement.
+The bandit slippery walk problem is a reinforcement learning problem in which an agent must learn to navigate a 7-state environment in order to reach a goal state. The environment is slippery, so the agent has a chance of moving in the opposite direction of the action it takes.
 
 ## SARSA LEARNING ALGORITHM
-Include the steps involved in the SARSA Learning algorithm
+Initialize the Q-values arbitrarily for all state-action pairs.
+Repeat for each episode:
+i. Initialize the starting state. ii. Repeat for each step of episode: a. Choose action from state using policy derived from Q (e.g., epsilon-greedy). b. Take action, observe reward and next state. c. Choose action from next state using policy derived from Q (e.g., epsilon-greedy). d. Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)] e. Update the state and action. iii. Until state is terminal.
+Until performance converges.
 
 ## SARSA LEARNING FUNCTION
 ### Name: Anish Raj P
